@@ -46,7 +46,7 @@ For each line, print the content enclosed within valid tags.
 
 
 # Solution
-### The solution is implemented in the Solution.java class
+### The solution is implemented in the <a rel="stylesheet" href="https://github.com/maikelsouza/TagContentExtractor/blob/main/src/main/java/com/qikserve/tagContentExtractor/Solution.java">Solution.java</a> class
 
 # Test
-### You can run the test class SolutionTest.java
+### You can run the test class <a rel="stylesheet" href="https://github.com/maikelsouza/TagContentExtractor/blob/main/src/test/java/com/qikserve/tagContentExtractor/SolutionTest.java">SolutionTest.java</a>

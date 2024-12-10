@@ -47,7 +47,6 @@ public class SolutionTest {
         String input = "1\n" +
                 "<h1>Nayeem loves counseling</h2>\n";
 
-
         String expectedOutput = "None";
 
         String actualOutput = runTest(input);
@@ -65,6 +64,5 @@ public class SolutionTest {
 
         return outputStream.toString().trim().replace("\r\n", "\n");
     }
-
 
 }
