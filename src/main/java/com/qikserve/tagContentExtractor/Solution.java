@@ -18,7 +18,7 @@ public class Solution {
                 List<String> openingTags = findOpeningTags(line);
                 List<String> closingTags = findClosingTags(line);
 
-                if (openingTags.size() != closingTags.size()){
+                if (openingTags.size() != closingTags.size() || openingTags.isEmpty() && closingTags.isEmpty()){
                     System.out.println("None");
                 }else{
                     for (int i = 0; i< openingTags.size(); i++){
@@ -52,7 +52,7 @@ public class Solution {
         Matcher matcher = pattern.matcher(args);
 
         List<String> tags = new ArrayList<>();
-        while (matcher.find()) {
+        if (matcher.find()) {
             tags.add(matcher.group());
         }
 
@@ -66,9 +66,10 @@ public class Solution {
         Matcher matcher = pattern.matcher(input);
 
         if (matcher.find()) {
-            return matcher.group(1).replaceAll("<.*?>", "");
+            String result = matcher.group(1).replaceAll("<.*?>", "");
+            return result.isEmpty() ? "None" : result;
         } else {
-            return null;
+            return "Nome";
         }
     }
 }

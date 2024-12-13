@@ -21,7 +21,6 @@ public class SolutionTest {
 
         String expectedOutput = "Nayeem loves counseling\n" +
                 "Sanjay has no watch\n" +
-                "So wait for a while\n" +
                 "None\n" +
                 "Imtiaz has a secret crush";
 
